@@ -1,0 +1,206 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Apr 27 12:47:55 2018
+# Process ID: 8652
+# Current directory: C:/Users/Jorge/Documents/LabHLS_RS2016_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1040 C:\Users\Jorge\Documents\LabHLS_RS2016_4\LabHLS_RS2016_4.xpr
+# Log file: C:/Users/Jorge/Documents/LabHLS_RS2016_4/vivado.log
+# Journal file: C:/Users/Jorge/Documents/LabHLS_RS2016_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.xpr
+INFO: [Project 1-313] Project file moved from 'C:/LabHLS_RS2016_4' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_2.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_2_rs_erasure_0_0
+
+INFO: [Project 1-230] Project 'LabHLS_RS2016_4.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 814.363 ; gain = 92.105
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+report_ip_status -name ip_status
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip'.
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:rs_erasure:1.0 [get_ips  design_2_rs_erasure_0_0] -log ip_upgrade.log
+Adding cell -- xilinx.com:hls:rs_erasure:1.0 - rs_erasure_0
+Successfully read diagram <design_2> from BD file <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd>
+Upgrading 'C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_2_rs_erasure_0_0 (ReedSolomonCodecHLS 1.0) from revision 1804101615 to revision 1804271432
+Wrote  : <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Jorge/Documents/LabHLS_RS2016_4/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 960.832 ; gain = 32.961
+export_ip_user_files -of_objects [get_ips design_2_rs_erasure_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd]
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/ap_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/codeidx have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/c_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/c_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/c_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/c_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_4 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_5 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_6 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_7 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_8 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_9 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_10 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/d_11 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /rs_erasure_0/survival_pattern have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+Wrote  : <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd> 
+VHDL Output written to : C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rs_erasure_0 .
+Exporting to file C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Block Design Tcl file C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hw_handoff/design_2_bd.tcl
+Generated Hardware Definition File C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd] -directory C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.ip_user_files -ipstatic_source_dir C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.cache/compile_simlib/modelsim} {questa=C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.cache/compile_simlib/questa} {riviera=C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.cache/compile_simlib/riviera} {activehdl=C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_bd_design [get_bd_designs design_2]
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd] -fileset [get_filesets sources_1] -inst_template
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/sim/design_2.v:13]
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v:13]
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v:13]
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/sim/design_2.v:13]
+open_run impl_4
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4397] Generator change detected checking ShapeConfig Enum. shapeDB will be regenerated.
+Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/topmodule_routed/topmodule.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc:6]
+Finished Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/topmodule_routed/topmodule.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1318.574 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1318.574 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1402.539 ; gain = 329.973
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc:6]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v:13]
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/sim/design_2.v:13]
+reset_run synth_4
+launch_runs synth_4 -jobs 4
+[Fri Apr 27 15:16:23 2018] Launched synth_4...
+Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/synth_4/runme.log
+close_design
+open_run synth_4 -name synth_4
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_pins_basys3.xdc]
+Finished Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_pins_basys3.xdc]
+Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc:6]
+Finished Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_4 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1986.668 ; gain = 0.000
+[Fri Apr 27 15:21:44 2018] Launched impl_4...
+Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/runme.log
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v:13]
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/sim/design_2.v:13]
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v:13]
+WARNING: [HDL 9-2994] overwriting previous definition of module design_2 [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/sim/design_2.v:13]
+reset_run synth_4
+launch_runs impl_4 -jobs 4
+WARNING: [Project 1-478] Design 'synth_4' is stale and will not be used when launching 'impl_4'
+[Fri Apr 27 15:28:41 2018] Launched synth_4...
+Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/synth_4/runme.log
+[Fri Apr 27 15:28:41 2018] Launched impl_4...
+Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/runme.log
+close_design
+open_run impl_4
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1986.668 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1986.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_4
+launch_runs synth_4 -jobs 4
+[Fri Apr 27 15:58:20 2018] Launched synth_4...
+Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/synth_4/runme.log
+close_design
+launch_runs impl_4 -jobs 4
+[Fri Apr 27 16:03:56 2018] Launched impl_4...
+Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/runme.log

@@ -1,0 +1,415 @@
+
+*** Running vivado
+    with args -log topmodule.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source topmodule.tcl -notrace
+Command: synth_design -top topmodule -part xc7a35tcpg236-1 -flatten_hierarchy full
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6336 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 295.969 ; gain = 85.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topmodule' [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:25]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'meta_harden' [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/meta_harden.v:27]
+INFO: [Synth 8-256] done synthesizing module 'meta_harden' (1#1) [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/meta_harden.v:27]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/uart_rx.v:37]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_gen' [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+	Parameter OVERSAMPLE_RATE bound to: 1843200 - type: integer 
+	Parameter DIVIDER bound to: 54 - type: integer 
+	Parameter OVERSAMPLE_VALUE bound to: 53 - type: integer 
+	Parameter CNT_WID bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_gen' (2#1) [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/uart_baud_gen.v:35]
+INFO: [Synth 8-638] synthesizing module 'uart_rx_ctl' [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/uart_rx_ctl.v:52]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx_ctl' (3#1) [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/uart_rx_ctl.v:52]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/imports/lab3/uart_rx.v:37]
+INFO: [Synth 8-638] synthesizing module 'StateMachine' [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/StateMachine.v:23]
+WARNING: [Synth 8-3848] Net ap_clk in module/entity StateMachine does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/StateMachine.v:29]
+WARNING: [Synth 8-3848] Net ap_rst in module/entity StateMachine does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/StateMachine.v:30]
+WARNING: [Synth 8-3848] Net ap_start in module/entity StateMachine does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/StateMachine.v:31]
+INFO: [Synth 8-256] done synthesizing module 'StateMachine' (5#1) [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/StateMachine.v:23]
+WARNING: [Synth 8-3848] Net c_3_ap_vld in module/entity topmodule does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:70]
+WARNING: [Synth 8-3848] Net c_2_ap_vld in module/entity topmodule does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:68]
+WARNING: [Synth 8-3848] Net c_1_ap_vld in module/entity topmodule does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:66]
+WARNING: [Synth 8-3848] Net c_0_ap_vld in module/entity topmodule does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:64]
+WARNING: [Synth 8-3848] Net ap_ready in module/entity topmodule does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:60]
+WARNING: [Synth 8-3848] Net ap_idle in module/entity topmodule does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:59]
+WARNING: [Synth 8-3848] Net ap_done in module/entity topmodule does not have driver. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:58]
+INFO: [Synth 8-256] done synthesizing module 'topmodule' (6#1) [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/new/topmodule.v:25]
+WARNING: [Synth 8-3917] design topmodule has port led_pins[7] driven by constant 0
+WARNING: [Synth 8-3331] design StateMachine has unconnected port ap_clk
+WARNING: [Synth 8-3331] design StateMachine has unconnected port ap_rst
+WARNING: [Synth 8-3331] design StateMachine has unconnected port ap_start
+WARNING: [Synth 8-3331] design StateMachine has unconnected port rst_clk_rx
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[6]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[5]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[4]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[3]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[2]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[1]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 332.320 ; gain = 121.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 332.320 ; gain = 121.902
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_pins_basys3.xdc]
+Finished Parsing XDC File [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_pins_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_pins_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topmodule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topmodule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc:6]
+Finished Parsing XDC File [C:/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 632.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data_rdy" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 17    
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module meta_harden 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module uart_baud_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module uart_rx_ctl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module StateMachine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 24    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design topmodule has port led_pins[7] driven by constant 0
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[6]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[5]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[4]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[3]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[2]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[1]
+WARNING: [Synth 8-3331] design topmodule has unconnected port led_pins[0]
+WARNING: [Synth 8-3331] design topmodule has unconnected port btn_pin
+WARNING: [Synth 8-3332] Sequential element (meta_harden_rst_i0/signal_meta_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (meta_harden_rst_i0/signal_dst_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/meta_harden_rxd_i0/signal_meta_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/meta_harden_rxd_i0/signal_dst_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/state_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/state_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/over_sample_cnt_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/over_sample_cnt_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/over_sample_cnt_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/over_sample_cnt_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/bit_cnt_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/bit_cnt_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/bit_cnt_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_baud_gen_rx_i0/internal_count_reg[5]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_baud_gen_rx_i0/internal_count_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_baud_gen_rx_i0/internal_count_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_baud_gen_rx_i0/internal_count_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_baud_gen_rx_i0/internal_count_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_baud_gen_rx_i0/internal_count_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_baud_gen_rx_i0/baud_x16_en_reg_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[7]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[6]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[5]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_i0/uart_rx_ctl_i0/rx_data_rdy_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (control/old_rx_data_rdy_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (control/state_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (control/state_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (control/count_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (control/count_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (control/count_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (control/count_reg[0]) is unused and will be removed from module topmodule.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |     1|
+|2     |OBUFT |     7|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     8|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 632.488 ; gain = 422.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 45 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 632.488 ; gain = 112.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 632.488 ; gain = 422.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 632.488 ; gain = 421.336
+INFO: [Common 17-1381] The checkpoint 'C:/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/synth_3/topmodule.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 632.488 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 17 16:40:28 2018...

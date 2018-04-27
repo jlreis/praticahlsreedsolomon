@@ -1,0 +1,70 @@
+{
+   ExpandedHierarchyInLayout: "",
+   PinnedBlocks: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port ap_ready_0 -pg 1 -y 60 -defaultsOSRD
+preplace port ap_idle_0 -pg 1 -y 40 -defaultsOSRD
+preplace port ap_done_0 -pg 1 -y 20 -defaultsOSRD
+preplace port ap_start_0 -pg 1 -y 140 -defaultsOSRD
+preplace port c_1_ap_vld_0 -pg 1 -y 280 -defaultsOSRD
+preplace port c_2_ap_vld_0 -pg 1 -y 300 -defaultsOSRD
+preplace port codeidx_ap_vld_0 -pg 1 -y 220 -defaultsOSRD
+preplace port ap_clk_0 -pg 1 -y 240 -defaultsOSRD
+preplace port c_0_ap_vld_0 -pg 1 -y 260 -defaultsOSRD
+preplace port c_3_ap_vld_0 -pg 1 -y 320 -defaultsOSRD
+preplace port ap_rst_0 -pg 1 -y 260 -defaultsOSRD
+preplace portBus d_7_0 -pg 1 -y 440 -defaultsOSRD
+preplace portBus d_5_0 -pg 1 -y 400 -defaultsOSRD
+preplace portBus d_11_0 -pg 1 -y 520 -defaultsOSRD
+preplace portBus d_2_0 -pg 1 -y 340 -defaultsOSRD
+preplace portBus d_8_0 -pg 1 -y 460 -defaultsOSRD
+preplace portBus d_3_0 -pg 1 -y 360 -defaultsOSRD
+preplace portBus c_0 -pg 1 -y 340 -defaultsOSRD
+preplace portBus survival_pattern_0 -pg 1 -y 540 -defaultsOSRD
+preplace portBus d_1_0 -pg 1 -y 320 -defaultsOSRD
+preplace portBus c_1 -pg 1 -y 360 -defaultsOSRD
+preplace portBus d_6_0 -pg 1 -y 420 -defaultsOSRD
+preplace portBus c_2 -pg 1 -y 380 -defaultsOSRD
+preplace portBus d_0_0 -pg 1 -y 300 -defaultsOSRD
+preplace portBus codeidx_0 -pg 1 -y 280 -defaultsOSRD
+preplace portBus c_3 -pg 1 -y 400 -defaultsOSRD
+preplace portBus d_4_0 -pg 1 -y 380 -defaultsOSRD
+preplace portBus d_9_0 -pg 1 -y 480 -defaultsOSRD
+preplace portBus d_10_0 -pg 1 -y 500 -defaultsOSRD
+preplace inst rs_erasure_0 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace netloc ap_clk_0_1 1 0 1 NJ
+preplace netloc rs_erasure_0_c_0_ap_vld 1 1 1 NJ
+preplace netloc survival_pattern_0_1 1 0 1 NJ
+preplace netloc d_11_0_1 1 0 1 NJ
+preplace netloc codeidx_0_1 1 0 1 NJ
+preplace netloc rs_erasure_0_ap_ready 1 0 2 40 60 NJ
+preplace netloc d_8_0_1 1 0 1 NJ
+preplace netloc d_7_0_1 1 0 1 NJ
+preplace netloc ap_rst_0_1 1 0 1 NJ
+preplace netloc d_5_0_1 1 0 1 NJ
+preplace netloc d_0_0_1 1 0 1 NJ
+preplace netloc rs_erasure_0_ap_idle 1 0 2 30 40 NJ
+preplace netloc rs_erasure_0_c_0 1 1 1 NJ
+preplace netloc d_6_0_1 1 0 1 NJ
+preplace netloc rs_erasure_0_c_1 1 1 1 NJ
+preplace netloc rs_erasure_0_c_2 1 1 1 NJ
+preplace netloc d_9_0_1 1 0 1 NJ
+preplace netloc rs_erasure_0_ap_done 1 0 2 20 20 NJ
+preplace netloc ap_start_0_1 1 0 1 NJ
+preplace netloc rs_erasure_0_c_3 1 1 1 NJ
+preplace netloc d_10_0_1 1 0 1 NJ
+preplace netloc d_4_0_1 1 0 1 NJ
+preplace netloc d_1_0_1 1 0 1 NJ
+preplace netloc rs_erasure_0_c_3_ap_vld 1 1 1 NJ
+preplace netloc rs_erasure_0_c_2_ap_vld 1 1 1 NJ
+preplace netloc rs_erasure_0_c_1_ap_vld 1 1 1 NJ
+preplace netloc codeidx_ap_vld_0_1 1 0 1 NJ
+preplace netloc d_3_0_1 1 0 1 NJ
+preplace netloc d_2_0_1 1 0 1 NJ
+levelinfo -pg 1 0 210 400 -top 0 -bot 600
+",
+}
+{
+   da_clkrst_cnt: "1",
+}

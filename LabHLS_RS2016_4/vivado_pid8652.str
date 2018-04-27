@@ -1,0 +1,997 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 8652
+License: Customer
+
+Current time: 	Fri Apr 27 12:48:09 GFT 2018
+Time zone: 	French Guiana Time (America/Cayenne)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 135 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Jorge
+User home directory: C:/Users/Jorge
+User working directory: C:/Users/Jorge/Documents/LabHLS_RS2016_4
+User country: 	BR
+User language: 	pt
+User locale: 	pt_BR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/Jorge/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/Jorge/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/Jorge/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Jorge/Documents/LabHLS_RS2016_4/vivado.log
+Vivado journal file location: 	C:/Users/Jorge/Documents/LabHLS_RS2016_4/vivado.jou
+Engine tmp dir: 	C:/Users/Jorge/Documents/LabHLS_RS2016_4/.Xil/Vivado-8652-DESKTOP-00180EF
+
+GUI allocated memory:	192 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 505 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// aL (ch): Older Project Version: addNotify
+// [GUI Memory]: 48 MB (+48363kb) [00:00:06]
+// [Engine Memory]: 505 MB (+378575kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 505 MB. GUI used memory: 34 MB. Current time: 4/27/18 12:48:12 PM GFT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: C:\Users\Jorge\Documents\LabHLS_RS2016_4\LabHLS_RS2016_4.xpr. Version: Vivado v2016.4 
+// bv (ch):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aL (ch)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 582 MB (+53171kb) [00:00:21]
+// [GUI Memory]: 52 MB (+1560kb) [00:00:22]
+// [Engine Memory]: 619 MB (+8484kb) [00:00:23]
+// [GUI Memory]: 62 MB (+6901kb) [00:00:24]
+// Tcl Message: open_project C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/LabHLS_RS2016_4' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// Tcl Message: INFO: [Project 1-230] Project 'LabHLS_RS2016_4.xpr' upgraded for this version of Vivado. 
+// HMemoryUtils.trashcanNow. Engine heap size: 629 MB. GUI used memory: 42 MB. Current time: 4/27/18 12:48:27 PM GFT
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 814.363 ; gain = 92.105 
+// Project name: LabHLS_RS2016_4; location: C:/Users/Jorge/Documents/LabHLS_RS2016_4; part: xc7a35tcpg236-1
+// Elapsed time: 14 seconds
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// al (ch): Project Upgraded: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 65 MB (+617kb) [00:02:08]
+// [GUI Memory]: 70 MB (+1054kb) [00:03:48]
+// Elapsed time: 266 seconds
+dismissDialog("Project Upgraded"); // al (ch)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 77 MB (+3561kb) [00:04:54]
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// [GUI Memory]: 81 MB (+962kb) [00:12:53]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 42 MB. Current time: 4/27/18 1:18:32 PM GFT
+// [GUI Memory]: 87 MB (+1673kb) [00:59:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 76 MB. Current time: 4/27/18 1:48:34 PM GFT
+// [GUI Memory]: 92 MB (+452kb) [01:11:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 39 MB. Current time: 4/27/18 2:18:35 PM GFT
+// Elapsed time: 5906 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (cM, ch)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// bv (ch):  Refresh IP Catalog : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bv (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 42 MB. Current time: 4/27/18 2:48:35 PM GFT
+// Elapsed time: 1203 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v)]", 1); // B (D, ch)
+// PAPropertyPanels.initPanels (design_2.bd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6, true, false, false, false, true, false); // B (D, ch) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bv (ch):  IP Catalog : addNotify
+// 'a' command handler elapsed time: 6 seconds
+dismissDialog("IP Catalog"); // bv (ch)
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (O, ch)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // O (O, ch)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, false, true); // O (O, ch) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // O (O, ch)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (O, ch) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_ADD_REPOSITORY, "Add Repository..."); // ac (ai, ch)
+// Elapsed time: 52 seconds
+setFolderChooser("C:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip");
+// HOptionPane Error: ''c:\Users\Jorge\Documents\reed_solomon_erasure\ProjRSErasure\SolutionX\impl\ip' already specified. (File or Directory Already Specified)'
+selectButton("PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_FILE_OR_DIRECTORY_ALREADY_SPECIFIED_OK", "OK"); // JButton (A, G)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // O (O, ch) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REFRESH_ALL_REPOSITORIES, "Refresh All Repositories"); // ac (ai, ch)
+// TclEventType: CREATE_IP_CATALOG
+// bv (ch):  Refresh All IP Repositories : addNotify
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip'. 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Refresh All IP Repositories"); // bv (ch)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIVADO HLS IP ;  ;  ;  ; ", 1); // O (O, ch)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ch)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6, true); // B (D, ch) - Node
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.xpr. , [BD 41-1661] One or more IPs have been locked in the design 'design_2.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.. List of locked IPs:. design_2_rs_erasure_0_0. . ]", 6, false); // ah (O, ch)
+selectTab((HResource) null, (HResource) null, "IP Status", 5); // aE (Q, ch)
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk"); // N (B, ch)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/rs_erasure_0 ; true ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ;  ; ReedSolomonCodecHLS ; 1.0 (Rev. 1804101615) ; 1.0 (Rev. 1804271432) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; xc7a35tcpg236-1", 1, "design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk)", 2, false); // B (O, ch)
+// Elapsed time: 10 seconds
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk"); // N (B, ch)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/rs_erasure_0 ; true ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ;  ; ReedSolomonCodecHLS ; 1.0 (Rev. 1804101615) ; 1.0 (Rev. 1804271432) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; xc7a35tcpg236-1", 1, "design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk)", 2, false, false, false, false, true, false); // B (O, ch) - Popup Trigger
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk"); // N (B, ch)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/rs_erasure_0 ; true ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ;  ; ReedSolomonCodecHLS ; 1.0 (Rev. 1804101615) ; 1.0 (Rev. 1804271432) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; xc7a35tcpg236-1", 1, "design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk)", 2, false, false, false, false, true, false); // B (O, ch) - Popup Trigger
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk"); // N (B, ch)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/rs_erasure_0 ; true ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ;  ; ReedSolomonCodecHLS ; 1.0 (Rev. 1804101615) ; 1.0 (Rev. 1804271432) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; xc7a35tcpg236-1", 1, "design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk)", 2, false); // B (O, ch)
+// IP Status Information for ReedSolomonCodecHLS: hide
+expandTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/rs_erasure_0 ; true ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ;  ; ReedSolomonCodecHLS ; 1.0 (Rev. 1804101615) ; 1.0 (Rev. 1804271432) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; xc7a35tcpg236-1", 1); // B (O, ch)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/rs_erasure_0 ; true ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ;  ; ReedSolomonCodecHLS ; 1.0 (Rev. 1804101615) ; 1.0 (Rev. 1804271432) ; design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk) ; xc7a35tcpg236-1", 1, "design_2_rs_erasure_0_0 [ReedSolomonCodecHLS] (IP revision change. IP definition 'ReedSolomonCodecHLS (1.0)' changed on disk)", 2, false, false, false, false, false, true); // B (O, ch) - Double Click
+selectButton(PAResourceQtoS.SrcFilePropPanels_MORE_INFO, "more info"); // h (cM, ch)
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd), design_2 (design_2.v), rs_erasure_0 : design_2_rs_erasure_0_0 (design_2_rs_erasure_0_0.xci)]", 8); // B (D, ch)
+// A (ch): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd), design_2 (design_2.v), rs_erasure_0 : design_2_rs_erasure_0_0 (design_2_rs_erasure_0_0.xci), design_2_rs_erasure_0_0 (design_2_rs_erasure_0_0.v)]", 9, true); // B (D, ch) - Node
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// IP Status Information for ReedSolomonCodecHLS: hide
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_compile_order -fileset sources_1. , [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Jorge/Documents/reed_solomon_erasure/ProjRSErasure/SolutionX/impl/ip/component.xml. It will be created.. ]", 9, false); // ah (O, ch)
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd), design_2 (design_2.v)]", 7); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6, true, false, false, false, true, false); // B (D, ch) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // ac (ai, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// IP Status Information for ReedSolomonCodecHLS: hide
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, ch)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// Tcl Message: upgrade_ip -vlnv xilinx.com:hls:rs_erasure:1.0 [get_ips  design_2_rs_erasure_0_0] -log ip_upgrade.log 
+// bv (ch):  Upgrade IP : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:hls:rs_erasure:1.0 - rs_erasure_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 99 MB (+3189kb) [02:07:18]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Successfully read diagram <design_2> from BD file <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd> 
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Upgrading 'C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_2 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded design_2_rs_erasure_0_0 (ReedSolomonCodecHLS 1.0) from revision 1804101615 to revision 1804271432 
+// Tcl Message: Wrote  : <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd>  Wrote  : <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Jorge/Documents/LabHLS_RS2016_4/ip_upgrade.log'. 
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 960.832 ; gain = 32.961 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_2_rs_erasure_0_0] -no_script -sync -force -quiet 
+// aJ (ch): Generate Output Products: addNotify
+// Elapsed time: 17 seconds
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aJ)
+// bv (ch):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_2 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files  C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd] 
+// Tcl Message: Wrote  : <C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_2 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v VHDL Output written to : C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/sim/design_2.v VHDL Output written to : C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rs_erasure_0 . 
+// Tcl Message: Exporting to file C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh Generated Block Design Tcl file C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hw_handoff/design_2_bd.tcl Generated Hardware Definition File C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.hwdef 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 27 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_idle 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_idle 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_idle 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rs_erasure_0_ap_idle 
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aC, ch)
+closeTask("IP Integrator", "Block Design", "DesignTask.IP_INTEGRATOR");
+// A (ch): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: close_bd_design [get_bd_designs design_2] 
+dismissDialog("Confirm Close"); // A (ch)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ch)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+expandTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "design_2 ; false ;  ; design_2 ;  ;  ;  ;  ;  ; ", 0); // B (O, ch)
+collapseTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "design_2 ; false ;  ; design_2 ;  ;  ;  ;  ;  ; ", 0); // B (O, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, ch)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// Elapsed time: 256 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v)]", 1); // B (D, ch)
+selectCodeEditor("topmodule.v", 111, 150); // cd (w, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6, true, false, false, false, true, false); // B (D, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_VIEW_INST_TEMPL, "View Instantiation Template"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_VIEW_INST_TEMPL
+// TclEventType: OPEN_FILE_TO_VIEW
+// Tcl Message: make_wrapper -files [get_files C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd] -fileset [get_filesets sources_1] -inst_template 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd), design_2 (design_2.v), rs_erasure_0 : design_2_rs_erasure_0_0 (design_2_rs_erasure_0_0.xci)]", 8); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd), design_2 (design_2.v), rs_erasure_0 : design_2_rs_erasure_0_0 (design_2_rs_erasure_0_0.xci)]", 8); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd), design_2 (design_2.v), rs_erasure_0 : design_2_rs_erasure_0_0 (design_2_rs_erasure_0_0.xci)]", 8); // B (D, ch)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "design_2_wrapper.v", 3); // k (j, ch)
+// [GUI Memory]: 107 MB (+2132kb) [02:13:33]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "design_2_wrapper.v", 3); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+// Elapsed time: 31 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), design_2_i : design_2 (design_2.bd)]", 6); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), control : StateMachine (StateMachine.v)]", 5, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, topmodule (topmodule.v), control : StateMachine (StateMachine.v)]", 5, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "design_2_wrapper.v", 3); // k (j, ch)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 3); // k (j, ch)
+// Elapsed time: 54 seconds
+selectCodeEditor("StateMachine.v", 211, 214); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectCodeEditor("topmodule.v", 273, 95); // cd (w, ch)
+// Elapsed time: 69 seconds
+typeControlKey((HResource) null, "topmodule.v", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 3); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 3); // k (j, ch)
+selectCodeEditor("StateMachine.v", 278, 283); // cd (w, ch)
+typeControlKey((HResource) null, "StateMachine.v", 'v'); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 32, 179); // cd (w, ch)
+// [GUI Memory]: 112 MB (+363kb) [02:17:15]
+// Elapsed time: 39 seconds
+selectCodeEditor("StateMachine.v", 126, 258); // cd (w, ch)
+// Elapsed time: 47 seconds
+selectCodeEditor("StateMachine.v", 84, 178); // cd (w, ch)
+typeControlKey((HResource) null, "StateMachine.v", 'c'); // cd (w, ch)
+// Elapsed time: 12 seconds
+selectCodeEditor("StateMachine.v", 187, 280); // cd (w, ch)
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "StateMachine.v", 'v'); // cd (w, ch)
+// Elapsed time: 20 seconds
+selectCodeEditor("StateMachine.v", 199, 115); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 107, 232); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 130, 235); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 93, 147); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 150, 235); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 194, 167); // cd (w, ch)
+// Elapsed time: 18 seconds
+selectCodeEditor("StateMachine.v", 117, 261); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 117, 232); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 127, 232); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("topmodule.v", 97, 95); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectCodeEditor("topmodule.v", 179, 227); // cd (w, ch)
+selectCodeEditor("topmodule.v", 182, 245); // cd (w, ch)
+selectCodeEditor("topmodule.v", 187, 279); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("topmodule.v", 96, 146); // cd (w, ch)
+selectCodeEditor("topmodule.v", 105, 164); // cd (w, ch)
+selectCodeEditor("topmodule.v", 118, 173); // cd (w, ch)
+selectCodeEditor("topmodule.v", 10, 45); // cd (w, ch)
+selectCodeEditor("topmodule.v", 164, 63); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 119 MB (+1636kb) [02:21:24]
+// Elapsed time: 19 seconds
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ch): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.. ]", 2, false); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.. ]", 2, false); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.. ]", 2, false, false, false, false, false, true); // ah (O, ch) - Double Click
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ch): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, true); // g (aQ, ch): TRUE
+// [Engine Memory]: 652 MB (+1950kb) [02:21:37]
+// Elapsed time: 12 seconds
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ch): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ch): TRUE
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.xpr. ]", 1); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_compile_order -fileset sources_1. ]", 2); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_ip_catalog -rebuild -scan_changes. ]", 3); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, make_wrapper -files [get_files C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/design_2.bd] -fileset [get_filesets sources_1] -inst_template. ]", 4); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design rs_erasure_shl_23Xh4 has unconnected port din1[22]. ]", 7, true); // ah (O, ch) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design rs_erasure_shl_23Xh4 has unconnected port din1[22]. ]", 7); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design rs_erasure_shl_23Xh4 has unconnected port din1[22]. ]", 7); // ah (O, ch)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design topmodule has port led_pins[7] driven by constant 0. ]", 9); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design topmodule has port led_pins[7] driven by constant 0. ]", 9); // ah (O, ch)
+// Elapsed time: 27 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, [Route 35-328] Router estimated timing not met.. Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.. ]", 16, false); // ah (O, ch)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "ID;-;[Route 35-328];-;;-;16;-;DetailedMsg;-;The router incrementally updates the timing numbers based on the routing information during the design implementation. The final timing numbers reported do not qualify for timing signoff due to marginal inaccuracies and pessimism.;-;;-;16;-;Resolution;-;For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.;-;;-;16;-;"); // ah (O, ch)
+// 'Route 35-328' Message Details: show
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// 'Route 35-328' Message Details: hide
+// Elapsed time: 13 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // z (L, ch)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ch)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Timing Summary]", 21, false); // u (O, ch)
+// bi (ch): Implementation is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a (bi)
+// bv (ch):  Open Implemented Design : addNotify
+dismissDialog("Implementation is Out-of-date"); // bi (ch)
+// Tcl Message: open_run impl_4 
+// HMemoryUtils.trashcanNow. Engine heap size: 865 MB. GUI used memory: 57 MB. Current time: 4/27/18 3:11:20 PM GFT
+// [Engine Memory]: 865 MB (+189735kb) [02:23:20]
+// [Engine Memory]: 916 MB (+7728kb) [02:23:25]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 57 MB. Current time: 4/27/18 3:11:28 PM GFT
+// [Engine Memory]: 1,017 MB (+57763kb) [02:23:27]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2018.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,091 MB (+24440kb) [02:23:29]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.4 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Constraints 18-4397] Generator change detected checking ShapeConfig Enum. shapeDB will be regenerated. 
+// Tcl Message: Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/topmodule_routed/topmodule.xdc] 
+// Tcl Message: INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc:6] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/topmodule_routed/topmodule.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1318.574 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1318.574 ; gain = 0.000 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0,0
+// Tcl Message: open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1402.539 ; gain = 329.973 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 126 MB (+965kb) [02:23:35]
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ch): Report Timing Summary: addNotify
+// M (ch): Critical Messages: addNotify
+// [Engine Memory]: 1,161 MB (+16112kb) [02:23:46]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,275 MB. GUI used memory: 94 MB. Current time: 4/27/18 3:11:50 PM GFT
+// RouteApi::initDelayMediator elapsed time: 17.7s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,528 MB (+324102kb) [02:23:50]
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 22 seconds
+dismissDialog("Report Timing Summary"); // aJ (ch)
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc:6] INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs 
+// bv (ch):  Report Timing Summary : addNotify
+dismissDialog("Report Timing Summary"); // bv (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,551 MB. GUI used memory: 99 MB. Current time: 4/27/18 3:12:05 PM GFT
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (ch)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 6); // a (O, ch)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, virtual_clock to clk_pin]", 8); // a (O, ch)
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, virtual_clock to clk_pin]", 8); // a (O, ch)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, clk_pin to virtual_clock]", 7); // a (O, ch)
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, clk_pin to virtual_clock]", 7); // a (O, ch)
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 6); // a (O, ch)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-11,006 ns"); // h (Q, ch)
+// PAPropertyPanels.initPanels (Path 25) elapsed time: 1.2s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 25 ; -11.006387 ; 4 ; 4 ; 2 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter18_reg/C ; led_pins[5] ; 7.8221173 ; 4.3424907 ; 3.4796255 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 0, "-11.006387", 1); // i (O, ch)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 25 ; -11.006387 ; 4 ; 4 ; 2 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter18_reg/C ; led_pins[5] ; 7.8221173 ; 4.3424907 ; 3.4796255 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 0, "Path 25", 0); // i (O, ch)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 25 ; -11.006387 ; 4 ; 4 ; 2 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter18_reg/C ; led_pins[5] ; 7.8221173 ; 4.3424907 ; 3.4796255 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 0, "Path 25", 0, false, false, false, false, true); // i (O, ch) - Double Click
+// [GUI Memory]: 134 MB (+1155kb) [02:24:30]
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 25 ; -11.006387 ; 4 ; 4 ; 2 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter18_reg/C ; led_pins[5] ; 7.8221173 ; 4.3424907 ; 3.4796255 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 0, "Path 25", 0); // i (O, ch)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 25 ; -11.006387 ; 4 ; 4 ; 2 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter18_reg/C ; led_pins[5] ; 7.8221173 ; 4.3424907 ; 3.4796255 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 0, "Path 25", 0, false, false, false, false, true); // i (O, ch) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,596 MB. GUI used memory: 104 MB. Current time: 4/27/18 3:12:35 PM GFT
+// Elapsed time: 25 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ch)
+// [GUI Memory]: 141 MB (+806kb) [02:24:56]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 9); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, uart_led_pins_basys3.xdc]", 10, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, uart_led_pins_basys3.xdc]", 10, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, uart_led_timing.xdc]", 11, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, uart_led_timing.xdc]", 11, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 25 - timing_1", 4); // k (j, ch)
+// [GUI Memory]: 149 MB (+278kb) [02:25:34]
+// [GUI Memory]: 157 MB (+586kb) [02:25:36]
+// [Engine Memory]: 1,614 MB (+10211kb) [02:25:36]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,629 MB. GUI used memory: 134 MB. Current time: 4/27/18 3:13:39 PM GFT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,630 MB. GUI used memory: 119 MB. Current time: 4/27/18 3:13:40 PM GFT
+// Elapsed time: 20 seconds
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 6); // a (O, ch)
+// [GUI Memory]: 165 MB (+281kb) [02:25:56]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+// [GUI Memory]: 174 MB (+1065kb) [02:26:00]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 3); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_led_timing.xdc", 6); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_led_pins_basys3.xdc", 5); // k (j, ch)
+selectCodeEditor("uart_led_pins_basys3.xdc", 1, 95); // cd (w, ch)
+selectCodeEditor("uart_led_pins_basys3.xdc", 0, 94); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, ch)
+// Elapsed time: 17 seconds
+selectCodeEditor("uart_led_pins_basys3.xdc", 2, 195); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, ch)
+selectCodeEditor("uart_led_pins_basys3.xdc", 4, 300); // cd (w, ch)
+selectCodeEditor("uart_led_pins_basys3.xdc", 1, 299); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, ch)
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_PATH_TABLE, "Path Table"); // j
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectCodeEditor("topmodule.v", 15, 157); // cd (w, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,649 MB. GUI used memory: 132 MB. Current time: 4/27/18 3:15:05 PM GFT
+// Elapsed time: 28 seconds
+selectCodeEditor("topmodule.v", 223, 102); // cd (w, ch)
+selectCodeEditor("topmodule.v", 219, 85); // cd (w, ch)
+selectCodeEditor("topmodule.v", 219, 92); // cd (w, ch)
+selectCodeEditor("topmodule.v", 228, 108); // cd (w, ch)
+// Elapsed time: 18 seconds
+selectCodeEditor("topmodule.v", 24, 232); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_led_pins_basys3.xdc", 4); // k (j, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("uart_led_pins_basys3.xdc", 3, 295); // cd (w, ch)
+selectCodeEditor("uart_led_pins_basys3.xdc", 0, 196); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ax (f, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ac (ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ch): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_4 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_4 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 27 15:16:23 2018] Launched synth_4... Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/synth_4/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cM, ch)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 62 MB. Current time: 4/27/18 3:16:28 PM GFT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,651 MB. GUI used memory: 63 MB. Current time: 4/27/18 3:16:28 PM GFT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bv (ch):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 302 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bv (ch):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_4 -name synth_4 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 61 MB. Current time: 4/27/18 3:21:35 PM GFT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_pins_basys3.xdc] Finished Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_pins_basys3.xdc] Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc] 
+// Tcl Message: INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virtual_clock' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc:6] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/constrs_1/imports/lab3/uart_led_timing.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0,0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// 'dO' command handler elapsed time: 4 seconds
+dismissDialog("Open Synthesized Design"); // bv (ch)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ax (f, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // ac (ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// Tcl Message: launch_runs impl_4 -jobs 4 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: Writing placer database... Writing XDEF routing. Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1986.668 ; gain = 0.000 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 27 15:21:44 2018] Launched impl_4... Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+selectButton(PAResourceCommand.PACommandNames_SCHEMATIC, "Netlist_run_schematic"); // B (f, ch)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // B (f, ch)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ch): Implementation Failed: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ch)
+// PAPropertyPanels.initPanels (led_pins_OBUF[5]) elapsed time: 0.2s
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 4); // k (j, ch)
+// Elapsed time: 132 seconds
+selectCodeEditor("StateMachine.v", 327, 246); // cd (w, ch)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_led_pins_basys3.xdc", 3); // k (j, ch)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 4); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("topmodule.v", 197, 213); // cd (w, ch)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 4); // k (j, ch)
+// Elapsed time: 15 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, ch)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, ch)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, ch)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 3); // k (j, ch)
+selectCodeEditor("StateMachine.v", 10, 232); // cd (w, ch)
+selectCodeEditor("StateMachine.v", 2, 170); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 4); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 3); // k (j, ch)
+selectCodeEditor("StateMachine.v", 6, 246); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("topmodule.v", 70, 128); // cd (w, ch)
+selectCodeEditor("topmodule.v", 2, 144); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ax (f, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // ac (ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ch): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_4 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// Tcl Message: launch_runs impl_4 -jobs 4 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 27 15:28:41 2018] Launched synth_4... Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/synth_4/runme.log [Fri Apr 27 15:28:41 2018] Launched impl_4... Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/runme.log 
+dismissDialog("Starting Design Runs"); // bv (ch)
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cM, ch)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 63 MB. Current time: 4/27/18 3:28:43 PM GFT
+// Engine heap size: 1,651 MB. GUI used memory: 64 MB. Current time: 4/27/18 3:28:43 PM GFT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bv (ch):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bv (ch)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ch)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// Elapsed time: 372 seconds
+dismissDialog("Implementation Completed"); // ah (ch)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, ch)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (C, ch)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, ch)
+selectTab(PAResourceOtoP.ProjectSummaryPowerPanel_TABBED_PANE, PAResourceOtoP.ProjectSummaryPowerPanel_ON_CHIP, "On-Chip", 1); // d (C, ch)
+selectTab(PAResourceOtoP.ProjectSummaryPowerPanel_TABBED_PANE, PAResourceOtoP.ProjectSummaryPowerPanel_SUMMARY, "Summary", 0); // d (C, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [filemgmt 20-1741] File 'design_2.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:. * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2.v). * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v). Please reset and regenerate these modules to resolve the differences, or synthesize them independently.. ]", 1, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [filemgmt 20-1741] File 'design_2.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:. * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2.v). * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v). Please reset and regenerate these modules to resolve the differences, or synthesize them independently.. ]", 1, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [filemgmt 20-1741] File 'design_2.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:. * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2.v). * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v). Please reset and regenerate these modules to resolve the differences, or synthesize them independently.. ]", 1, true, false, false, false, false, true); // ah (O, ch) - Double Click - Node
+// Elapsed time: 14 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [filemgmt 20-1741] File 'design_2.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:. * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2.v). * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v). Please reset and regenerate these modules to resolve the differences, or synthesize them independently.. ]", 1); // ah (O, ch)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [filemgmt 20-1741] File 'design_2.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:. * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2.v). * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v). Please reset and regenerate these modules to resolve the differences, or synthesize them independently.. ]", 1); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [filemgmt 20-1741] File 'design_2.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:. * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/hdl/design_2.v). * design_2 (C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.srcs/sources_1/bd/design_2/synth/design_2.v). Please reset and regenerate these modules to resolve the differences, or synthesize them independently.. ]", 1); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 0); // ah (O, ch)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design]", 2); // ah (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 39, false); // u (O, ch)
+// bv (ch):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_4 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 64 MB. Current time: 4/27/18 3:35:57 PM GFT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1986.668 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1986.668 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Device view-level: 0,0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// M (ch): Critical Messages: addNotify
+dismissDialog("Open Implemented Design"); // bv (ch)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (ch)
+// Elapsed time: 64 seconds
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-9,022 ns"); // h (Q, ch)
+// PAPropertyPanels.initPanels (Path 21) elapsed time: 0.3s
+// TclEventType: TIMING_RESULTS_UNLOAD
+// PAPropertyPanels.initPanels (ap_enable_reg_pp0_iter1_reg (FDRE)) elapsed time: 0.2s
+// Elapsed time: 11 seconds
+closeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - impl_4 (saved)"); // aw (aE, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Timing Summary]", 33, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ch): Report Timing Summary: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+dismissDialog("Report Timing Summary"); // aJ (ch)
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs 
+// bv (ch):  Report Timing Summary : addNotify
+dismissDialog("Report Timing Summary"); // bv (ch)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-9,022 ns"); // h (Q, ch)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 21 ; -9.022185 ; 3 ; 2 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter1_reg/C ; led_pins[5] ; 5.8613157 ; 3.370263 ; 2.4910536 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 0, "-9.022185", 1); // i (O, ch)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 21 ; -9.022185 ; 3 ; 2 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter1_reg/C ; led_pins[5] ; 5.8613157 ; 3.370263 ; 2.4910536 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 0, "-9.022185", 1, false, false, false, false, true); // i (O, ch) - Double Click
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (O, ch)
+// Elapsed time: 15 seconds
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[topmodule, Leaf Cells (13)]", 2); // aW (O, ch)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, uart_led_timing.xdc]", 11, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, uart_led_timing.xdc]", 11, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectCodeEditor("uart_led_timing.xdc", 417, 44); // cd (w, ch)
+selectCodeEditor("uart_led_timing.xdc", 157, 38); // cd (w, ch)
+selectCodeEditor("uart_led_timing.xdc", 155, 95); // cd (w, ch)
+selectCodeEditor("uart_led_timing.xdc", 155, 95, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("uart_led_timing.xdc", 1, 90); // cd (w, ch)
+selectCodeEditor("uart_led_timing.xdc", 1, 90, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("uart_led_timing.xdc", 99, 82); // cd (w, ch)
+selectCodeEditor("uart_led_timing.xdc", 159, 44); // cd (w, ch)
+// Elapsed time: 19 seconds
+selectCodeEditor("uart_led_timing.xdc", 416, 40); // cd (w, ch)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 21 - timing_1", 5); // k (j, ch)
+selectTab((HResource) null, (HResource) null, "Netlist", 1); // aE (Q, ch)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Slack ; -9.022ns", 1, "-9.022ns", 1); // C (p, ch)
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, clk_pin to virtual_clock]", 7); // a (O, ch)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, clk_pin to virtual_clock]", 7); // a (O, ch)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, clk_pin to virtual_clock, Setup -9,022 ns]", 8, false); // a (O, ch)
+// Elapsed time: 12 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 25 ; -7.758814 ; 1 ; 1 ; design_2_i/rs_erasure_0/inst/ap_enable_reg_pp0_iter10_reg_lopt_replica_5/C ; led_pins[0] ; 4.5899444 ; 3.0644062 ; 1.5255382 ; 1.9999993 ; clk_pin ; virtual_clock ; ", 4, "-7.758814", 1); // i (O, ch)
+// Elapsed time: 172 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 4); // k (j, ch)
+// Elapsed time: 692 seconds
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[topmodule, Leaf Cells (13)]", 2); // aW (O, ch)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[topmodule, design_2_i (design_2)]", 4); // aW (O, ch)
+// Elapsed time: 254 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_led_timing.xdc", 6); // k (j, ch)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("uart_led_timing.xdc", 157, 91); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ax (f, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ac (ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ch): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ch)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_4 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_4 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 27 15:58:20 2018] Launched synth_4... Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/synth_4/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// Elapsed time: 35 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cM, ch)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,651 MB. GUI used memory: 70 MB. Current time: 4/27/18 3:58:57 PM GFT
+// TclEventType: CURR_DESIGN_SET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,651 MB. GUI used memory: 70 MB. Current time: 4/27/18 3:58:57 PM GFT
+// Tcl Message: close_design 
+// bv (ch):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 297 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_4 -jobs 4 
+// Tcl Message: [Fri Apr 27 16:03:56 2018] Launched impl_4... Run output will be captured here: C:/Users/Jorge/Documents/LabHLS_RS2016_4/LabHLS_RS2016_4.runs/impl_4/runme.log 
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
